@@ -40,11 +40,7 @@ const FollowLikeBox = ({ restaurantID }) => {
 				{ !followed ?
                 	<Button styles="" value="Follow" handler={follow_request}></Button> 
             		: <Button styles="" value="Unfollow" handler={unfollow_request}></Button>
-            	} 
-
-			    <Button styles="" disabled={false} value="Follow" handler={follow_request}></Button>
-			</div>
-			<div className="follow-favourite">
+            	}
 				<div className="heart">
 					<LikeButton id={restaurantID} post={false}/>
 				</div>
